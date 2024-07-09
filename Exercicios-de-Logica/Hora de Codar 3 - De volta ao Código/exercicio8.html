@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+
+<body>
+    <script>
+        //* Ler um valor N e imprimir todos os valores inteiros entre 1 (inclusive) e N (inclusive). Considere que o N será sempre maior que ZERO. N  é um valor informado pelo usuário
+
+        var n = parseFloat(prompt("Digite algum valor: "));
+
+        while (n <= 1) {
+            n = parseFloat(prompt("O valor que você digitou está invalido, digite um valor maior que 1: "));
+        }
+
+        var i = 1;
+
+        while (i <= n) {
+            document.write("Numero " + i + "<br>")
+            i++;
+        }
+
+    </script>
+</body>
+
+</html>

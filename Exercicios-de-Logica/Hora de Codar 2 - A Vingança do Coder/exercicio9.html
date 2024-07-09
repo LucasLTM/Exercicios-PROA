@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+    <script>
+       var ano_de_nascimento = parseInt(prompt("Em qual ano você nasceu?"));
+       var resultado = 2026-ano_de_nascimento;
+
+       if (resultado >= 18) {
+        alert("Nas eleições presidenciais de 2026 você terá que votar obrigatoriamente");
+       } else if (resultado >= 16 && resultado <= 17) {
+        alert("Nas eleições presidenciais de 2026 você terá o direito de votar sem precisar ser obrigatorio");
+       } else if (resultado < 16) {
+        alert("Nas eleições presidenciais de 2026 você não terá o direito de votar.");
+       }
+    </script>
+</body>
+</html>

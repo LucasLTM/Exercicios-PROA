@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    <script>
+        
+        //*Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.
+
+        var lista = [];
+        var valor1 = parseFloat(prompt("Digite o primeiro valor: "));
+        var valor2 = parseFloat(prompt("Digite o segundo valor: "));
+
+        while (valor1 <= valor2) {
+            lista.push(valor1);
+            var soma = lista.reduce((acumulador, valorAtual) => acumulador + valorAtual, 0);
+            valor1++;
+        }
+
+        var media = soma/ lista.length;
+        alert("A media é: " + media)
+    </script>
+</body>
+</html>

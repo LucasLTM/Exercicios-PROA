@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <script>
+        //*Considerando a figura abaixo, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas. O usuário irá informar os valores de cada variável.
+
+
+        //Retangulo
+        alert("Retangulo");
+        var base = parseInt(prompt("Informe a base do retangulo:"));
+        var altura = parseInt(prompt("Informe a altura do retangulo:"));
+        var resultado = base*altura;
+
+        alert("O valor da area do seu retangulo é: " + resultado);
+
+        //Quadrado
+        alert("Quadrado");
+        var lado = parseInt(prompt("Informe o lados do quadrado:"));
+        var resultado = lado*lado;
+
+        alert("O valor da area do seu quadrado é: " + resultado);
+
+        //Losango
+        alert("Losango");
+        var diagonal_maior = parseFloat(prompt("Informe a diagonal maior: "));
+        var diagonal_menor = parseFloat(prompt("Informe a diagonal menor: "));
+        var resultado = (diagonal_maior*diagonal_menor)/2;
+
+        alert("O valor da area do seu losango é: " + resultado);
+
+        //Trapézio
+        alert("Trapézio");
+        var base_maior = parseFloat(prompt("Informe a base maior: "));
+        var base_menor = parseFloat(prompt("Informe a base menor: "));
+        var altura = parseFloat(prompt("Informe a altura: "));
+        var resultado = (base_maior+base_menor)*altura/2;
+
+        alert("O valor da area do seu trapézio é: " + resultado);
+
+        //Paralelogramo
+        alert("Paralelogramo");
+        var base = parseInt(prompt("Informe a base do paralelogramo:"));
+        var altura = parseInt(prompt("Informe a altura do paralelogramo:"));
+        var resultado = base*altura;
+
+        alert("O valor da area do seu paralelogramo é: " + resultado);
+
+        //Triângulo
+        alert("Triângulo");
+        var base = parseFloat(prompt("Informe a base do seu triângulo: "));
+        var altura = parseFloat(prompt("Informe a altura do seu triângulo: "));
+        var resultado = (base*altura)/2;
+
+        alert("O valor da area do seu triângulo é: " + resultado);
+
+        //Círculo
+        alert("Círculo");
+        var pi = 3.1415;
+        var raio = parseFloat(prompt("Informe o valor do raio do círculo: (como fazer o raio dessa formula kkkkkkk)"));
+        var resultado = (raio*raio)*pi;
+
+        alert("O valor da area do seu círculo é: " + resultado);
+    </script>
+</body>
+</html>

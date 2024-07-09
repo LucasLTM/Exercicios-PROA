@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <script>
+        //* Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.
+
+var valor1 = parseFloat(prompt("Digite o primeiro valor: "));
+var valor2 = parseFloat(prompt("Digite o segundo valor: "));
+var valor3 = parseFloat(prompt("Digite o terceiro valor: "));
+var valor4 = parseFloat(prompt("Digite o quarto valor: "));
+var valor5 = parseFloat(prompt("Digite o quinto valor: "));
+var valor6 = parseFloat(prompt("Digite o sexto valor: "));
+
+var lista = [];
+
+if (valor1 <= 72) {
+    lista.push(valor1);
+}
+if (valor2 <= 72) {
+    lista.push(valor2);
+}
+if (valor3 <= 72) {
+    lista.push(valor3);
+}
+if (valor4 <= 72) {
+    lista.push(valor4);
+}
+if (valor5 <= 72) {
+    lista.push(valor5);
+}
+if (valor6 <= 72) {
+    lista.push(valor6);
+}
+
+var soma = 0;
+for (var i = 0; i < lista.length; i++) {
+    soma += lista[i];
+}
+
+document.write("Valores informados: " + lista.join(", ") + "<br>");
+document.write("Soma dos valores inferiores a 72: " + soma);
+
+    </script>
+</body>
+</html>

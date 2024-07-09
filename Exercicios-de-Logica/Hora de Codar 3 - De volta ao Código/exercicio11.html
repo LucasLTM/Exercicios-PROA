@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <script>
+        
+        //*Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo.
+
+        var valor1 = parseFloat(prompt("Digite o primeiro valor: "));
+        var valor2 = parseFloat(prompt("Digite o segundo valor: "));
+        var valor3 = parseFloat(prompt("Digite o terceiro valor: "));
+        var valor4 = parseFloat(prompt("Digite o quarto valor: "));
+        var valor5 = parseFloat(prompt("Digite o quinto valor: "));
+        var valor6 = parseFloat(prompt("Digite o sexto valor: "));
+        var valor7 = parseFloat(prompt("Digite o setimo valor: "));
+        var valor8 = parseFloat(prompt("Digite o oitavo valor: "));
+        var valor9 = parseFloat(prompt("Digite o nono valor: "));
+        var valor10 = parseFloat(prompt("Digite o decimo valor: "));
+        
+        var dentro = [];
+        var fora = [];
+
+        if (valor1 < 24 || valor1 > 42) {
+            fora.push(valor1);
+        } else {
+            dentro.push(valor1);
+        } if (valor2 < 24 || valor1 > 42) {
+            fora.push(valor2);
+        } else {
+            dentro.push(valor2);
+        } if (valor3 < 24 || valor3 > 42) {
+            fora.push(valor3);
+        } else {
+            dentro.push(valor3);
+        } if (valor4 < 24 || valor4 > 42) {
+            fora.push(valor4);
+        } else {
+            dentro.push(valor4);
+        } if (valor5 < 24 || valor5 > 42) {
+            fora.push(valor5);
+        } else {
+            dentro.push(valor5);
+        } if (valor6 < 24 || valor6 > 42) {
+            fora.push(valor6);
+        } else {
+            dentro.push(valor6);
+        } if (valor7 < 24 || valor7 > 42) {
+            fora.push(valor7);
+        } else {
+            dentro.push(valor7);
+        } if (valor8 < 24 || valor8 > 42) {
+            fora.push(valor8);
+        } else {
+            dentro.push(valor8);
+        } if (valor9 < 24 || valor9 > 42) {
+            fora.push(valor9);
+        } else {
+            dentro.push(valor9);
+        } if (valor10 < 24 || valor10 > 42) {
+            fora.push(valor10);
+        } else {
+            dentro.push(valor10);
+        }
+
+        alert("Valores dentro dos parametros: " + dentro);
+        alert("Valores fora dos parametros: " + fora);
+
+    </script>
+</body>
+</html>

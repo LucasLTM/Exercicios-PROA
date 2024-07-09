@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+
+<body>
+    <script>
+
+        var lista = ["banana", "morango", "melancia", "uva", "abacaxi"];
+
+        
+        while (lista.length > 0) {
+            
+            var fruta = prompt("Informe a fruta que você deseja remover " + lista);
+
+            if (lista.includes(fruta)) {
+                var indice = lista.indexOf(fruta)
+                lista.splice(indice, 1)
+            }
+        }
+
+        alert("Lista de compras finalizada")
+    </script>
+</body>
+
+</html>

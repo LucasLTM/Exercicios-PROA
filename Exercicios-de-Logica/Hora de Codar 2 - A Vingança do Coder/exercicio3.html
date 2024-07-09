@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <script>
+        //* Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+
+        var numero_1 = parseInt(prompt("Digite um numero: "))
+        var numero_2 = parseInt(prompt("Digite mais um numero: "))
+        var numero_3 = parseInt(prompt("Digite outro numero: "))
+
+        if (numero_1 > numero_2 && numero_1 > numero_3) {
+            alert("O maior valor é: " + numero_1)
+        } else if (numero_2 > numero_1 && numero_2 > numero_3){
+            alert("O maior valor é: " + numero_2)
+        } else if (numero_3 > numero_1 && numero_3 > numero_2){
+            alert("O maior valor é: " + numero_3)
+        } else if (numero_1 == numero_2 && numero_2 == numero_3){
+            alert("Os numeros são iguais")
+        }
+    </script>
+</body>
+</html>

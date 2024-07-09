@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <script>
+
+        //*  Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total. Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário.
+
+        var nota1 = parseFloat(prompt("Digite a primeira nota: "));
+        var nota2 = parseFloat(prompt("Digite a segunda nota: "));
+        var nota3 = parseFloat(prompt("Digite a terceira nota: "));
+        var nota4 = parseFloat(prompt("Digite a quarta nota: "));
+        var nota5 = parseFloat(prompt("Digite a quinta nota: "));
+        var nota6 = parseFloat(prompt("Digite a sexta nota: "));
+
+        while (nota1 < 0 || nota1 > 10) {
+            nota1 = parseFloat(prompt("O valor da nota 1 está invalido por favor digite um valor de 0 a 10: "));
+        }
+
+        while (nota2 < 0 || nota2 > 10) {
+            nota2 = parseFloat(prompt("O valor da nota 2 está invalido por favor digite um valor de 0 a 10: "));
+        }
+        
+        while (nota3 < 0 || nota3 > 10) {
+            nota3 = parseFloat(prompt("O valor da nota 3 está invalido por favor digite um valor de 0 a 10: "));
+        }
+
+        while (nota4 < 0 || nota4 > 10) {
+            nota4 = parseFloat(prompt("O valor da nota 4 está invalido por favor digite um valor de 0 a 10: "));
+        }
+
+        while (nota5 < 0 || nota5 > 10) {
+            nota5 = parseFloat(prompt("O valor da nota 5 está invalido por favor digite um valor de 0 a 10: "));
+        }
+
+        while (nota6 < 0 || nota6 > 10) {
+            nota6 = parseFloat(prompt("O valor da nota 6 está invalido por favor digite um valor de 0 a 10: "));
+        }
+
+        var media = (nota1+nota2+nota3+nota4+nota5+nota6)/6;
+
+        alert("A media das suas notas é: " + media);
+        
+        </script>
+</body>
+</html>

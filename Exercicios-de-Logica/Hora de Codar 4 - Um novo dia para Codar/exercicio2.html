@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <script>
+        
+        var planetas = ["Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"];
+        
+        var respota_do_usuario = prompt("digite o planeta que você quer verificar");
+
+        while (planetas.includes(respota_do_usuario)) {
+            alert(respota_do_usuario + " está cadastrado no nossos dados!");
+            process.exit(0);
+        }
+        
+        alert(respota_do_usuario + "não está cadastrado no nossos dados como um planeta, por favor tente novamente")
+        </script>
+</body>
+</html>
